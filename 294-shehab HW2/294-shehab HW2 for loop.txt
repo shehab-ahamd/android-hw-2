@@ -1,0 +1,115 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+      int [] studentPercentage = { 70,90,30,90,80,84,69,92,63,45 } ;
+      char [] letterGrades = new char [ 10 ] ;
+         for( int i =0; i<studentPercentage.length ; i++)
+         {
+             letterGrades [ i ] = Grade (studentPercentage [ i ]);
+             System.out.println(letterGrades [ i ]);
+             
+         }
+     }
+
+     public static char Grade ( int x )
+  {   if (x >=90.0)
+         {LetterA();
+         System.out.println("\n\n");
+             return 'A';
+             
+         }else if(x >=80.0)
+         { LetterB();
+         System.out.println("\n\n");
+             return 'B';
+         }else if(x >=70.0)
+         {
+             LetterC();
+         System.out.println("\n\n");
+             return 'C';
+             
+         }else if (x>=60.0)
+         {
+             
+             LetterD();
+             System.out.println("\n\n");
+             return 'D';
+         
+             
+             
+         } else if(x<=60.0)
+         
+                 {
+               LetterF();
+               System.out.println("\n\n");
+             return 'F';
+         }else if(x>=0)
+         
+         
+         
+         {
+             return 'O';
+            
+            
+         }
+              return 'E';
+     }
+         public static void  LetterA()
+       {
+       System.out.println("           *            ");
+       System.out.println("         *   *            ");
+       System.out.println("        *     *           ");
+       System.out.println("       *********             ");
+       System.out.println("      *         *           ");
+       System.out.println("     *           *           ");
+       }
+            public static void  LetterB(){
+      System.out.println(" **********                   ");
+        System.out.println(" *         *                   ");
+        System.out.println(" *          *                  ");
+        System.out.println(" *          *                ");
+        System.out.println(" ******** *            ");
+        System.out.println(" *          *               ");
+        System.out.println(" *          *               ");
+        System.out.println(" *         *                   ");
+        System.out.println(" **********                 ");
+}
+    
+    
+    
+     public static void  LetterC(){
+        System.out.println(" ***********                 ");
+        System.out.println(" **         *               ");
+        System.out.println(" *                            ");
+        System.out.println(" *                        ");
+        System.out.println(" *            ");
+        System.out.println(" *                         ");
+        System.out.println(" *                         ");
+        System.out.println(" **         *                  ");
+        System.out.println(" ***********                ");    
+}
+    
+    
+     public static void  LetterD(){
+        System.out.println(" **********                 ");
+        System.out.println(" **         *               ");
+        System.out.println(" *            *                ");
+        System.out.println(" *             *           ");
+        System.out.println(" *             *");
+        System.out.println(" *             *            ");
+        System.out.println(" *            *             ");
+        System.out.println(" **         *                  ");
+        System.out.println(" **********               ");    
+}
+
+     public static void  LetterF(){
+        System.out.println(" **********                   ");
+        System.out.println(" *                            ");
+        System.out.println(" *                            ");
+        System.out.println(" *                        ");
+        System.out.println(" **********            ");
+        System.out.println(" *                         ");
+        System.out.println(" *                         ");
+        System.out.println(" *                            ");
+        System.out.println(" *                 ")    ;    
+ }
+}
